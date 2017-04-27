@@ -1,5 +1,8 @@
 import Component from "@glimmer/component";
+import connect from '../connect/component';
 
-export default class GlimmerRedux extends Component {
+class GlimmerRedux extends Component {
 
 }
+
+export default connect()(GlimmerRedux)

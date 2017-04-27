@@ -1,5 +1,11 @@
 import App from './main';
 import { ComponentManager, setPropertyDidChange } from '@glimmer/component';
+import { createStore } from 'redux';
+
+import reducer from './reducers';
+
+window.reduxStore = createStore(reducer);
+
 
 const app = new App();
 const containerElement = document.getElementById('app');
